@@ -1,0 +1,90 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+    <meta http-equiv="content-language" content="en-us" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="author" content="Ashwani Braj" />
+    <meta name="description" content="Home Page, Profile, Developer" />
+    <meta name="keywords" content="Home Page, Profile, Developer" />
+    <link rel="stylesheet" type="text/css" href="http://dl.dropbox.com/u/32108566/Web/style.css" media="screen" />
+    <title>About Me - AshwaniBraj.com</title>
+</head>
+
+
+<body>
+
+<div id="site-wrapper">
+<div id="header">
+    <div id="top">
+        <div class="left" id="logo">
+	{% load staticfiles %}
+ 	<img src="{% static "aboutme/AshwaniBraj.jpg" %}" alt="Ashwani Braj" width="150" height="150">
+	</div>
+	<div class="left navigation" id="main-nav">
+	<h2>Ashwani<br>Braj</h2>
+	
+	<div class="clearer">&nbsp;</div>
+	</div>
+    <div class="clearer">&nbsp;</div>
+    </div>
+    <div class="navigation" id="main-nav">
+            <ul class="tabbed">
+
+
+
+                        <li class="current-tab"><a href="/aboutme/">About Me </a></li>
+
+
+
+
+
+                        <li><a href="/blog/">Blog </a></li>
+
+
+
+
+
+                        <li><a href="/cv/">Resume </a></li>
+
+
+
+            </ul>
+            <div class="clearer">&nbsp;</div>
+        </div>
+
+
+
+</div>
+<div id="splash">
+    <div class="col3 left">
+        <h2 class="label label-green">About Me</h2>
+	<p> 
+        	
+	{% for i in final %} 
+	 	{{ i }}<br>
+	{% endfor %}		
+
+	</p>
+    </div>
+</div>
+<div id="footer">
+
+    <div class="left" id="footer-left">
+        <p>&copy; 2014 Ashwani Braj. All rights Reserved</p>
+        <div class="clearer">&nbsp;</div>
+    </div>
+    <div class="right" id="footer-right">
+        <p class="large">
+           
+          
+         
+        
+            <a href="#top" class="quiet">Page Top &uarr;</a></p>
+    </div>
+    <div class="clearer">&nbsp;</div>
+</div>
+</div>
+
+</body>
+</html>	

@@ -1,0 +1,122 @@
+from django.shortcuts import render
+from forum.models import userForm, authorForm, user_main
+
+# Create your views here.
+
+def fcontent(fname):
+	temp = open('/home/ashwani/Desktop/stud/corplaw/corplaw/forum/contentfiles/'+fname) 
+        content = []
+	content = temp.readlines()	
+	temp.close()
+	return content
+
+def homepg(request):
+	final = fcontent('home.txt')	
+	final1 = fcontent('update.txt')
+	context = {'final':final, 'final1':final1}
+	return render(request, 'forum/homepg.html',context)
+
+def aboutCLF(request):
+	final = fcontent('aboutCLF.txt')	
+	context = {'final':final}
+	return render(request, 'forum/aboutCLF.html',context)
+
+def keynote(request):
+	final = fcontent('keynote.txt')	
+	context = {'final':final}
+	return render(request, 'forum/keynote.html',context)
+
+def subtheme(request):
+	#final = fcontent('keynote.txt')	
+	#context = {'final':final}
+	return render(request, 'forum/subtheme.html')#,context)
+
+def callforpaper(request):
+	#final = fcontent('keynote.txt')	
+	#context = {'final':final}
+	return render(request, 'forum/callforpaper.html')
+
+def advisoryboard(request):
+	#final = fcontent('keynote.txt')	
+	#context = {'final':final}
+	return render(request, 'forum/advisoryboard.html')#,context)
+
+def participants(request):
+	final = fcontent('participants.txt')	
+	msg = ""
+	form = userForm()
+	if request.method == 'POST':
+		form = userForm(request.POST)
+		if form.is_valid():					
+			user = user_main.objects.create(first_name = form["first_name"],
+							last_name = form["last_name"],
+							email_id = form["email_id"],
+							college_name = form["college_name"]
+							)	
+			if user is not None:		
+				form = userForm()				
+				msg = "Registered Successfully."			
+		else:
+			msg = "Registration Failed. Please try again"						
+				
+	else:
+		form = userForm()		
+	return render(request, 'forum/participants.html', { 'final':final, 'form' : form, 'msg' : msg }) 
+
+def handle_file(f):
+	try:
+	    rec = user_main.objects.latest('id');
+	    prefix = str(rec.id + 1) + str('_');
+	    with open('forum/files/'+ str(prefix) + f.name, 'wb+') as destination:
+		for chunk in f.chunks():
+			destination.write(chunk)
+	    return True
+	except Exception as e:
+	    return False
+
+def authors(request):
+	final = fcontent('authors.txt')	
+	msg = ""
+	form = authorForm()	
+	if request.method == 'POST':
+		form = authorForm(request.POST, request.FILES)		
+   	        if form.is_valid():								
+			if request.FILES['file'].name.endswith('.pdf'):							
+				if handle_file(request.FILES['file']):				 					
+					rec = user_main.objects.latest('id');
+				        prefix = str(rec.id + 1) + str('_');				
+					user = user_main.objects.create(first_name = form["first_name"],
+									last_name = form["last_name"],
+									email_id = form["email_id"],
+									college_name = form["college_name"],
+									file_name = str(prefix) + request.FILES['file'].name
+									)	
+					if user is not None:		
+						form = authorForm()	
+						form1 = userForm()			
+						msg = "File Uploaded Successfully."			
+				else:
+					msg = "File could not be uploaded. Please Try again. (Size < 2.5MB)"
+			else:
+				msg = "Please upload pdf files only. (Size < 2.5MB)"
+		else:
+			msg = "Upload Failed. Please try again."						
+				
+	else:
+		form = authorForm()	
+	return render(request, 'forum/authors.html', { 'final':final, 'form' : form, 'msg' : msg })
+
+def sponsers(request):
+	#final = fcontent('keynote.txt')	
+	#context = {'final':final}
+	return render(request, 'forum/sponsers.html')
+
+def contactus(request):
+	#final = fcontent('keynote.txt')	
+	#context = {'final':final}
+	return render(request, 'forum/contactus.html')
+
+def developerinfo(request):
+	final = fcontent('developerinfo.txt')	
+	context = {'final':final}
+	return render(request, 'forum/developerinfo.html', context)

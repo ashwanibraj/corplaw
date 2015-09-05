@@ -1,0 +1,307 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+    <meta http-equiv="content-language" content="en-us" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="author" content="Ashwani Braj" />
+    <meta name="description" content="Corporate Law Forum, Law, Financial Market Abuse" />
+    <meta name="keywords" content="Corporate Law Forum, Law, Financial Market Abuse, CLF, Conference, Paper" />
+    <link rel="stylesheet" type="text/css" href="http://dl.dropbox.com/u/32108566/Web/style.css" media="screen" />
+    <title>Theme - Sub-Theme</title>
+<script type="text/javascript"> 
+function gotoLink(e) { 
+n=e.options[e.selectedIndex].value; 
+if(n!='') { 
+window.location.href=n; 
+} 
+} 
+</script>
+    <style type="text/css">
+	#main-nav {padding-top: 35px;}
+	.col4 {width: 99%;padding-right:1%}
+		.selected-dropdown select {
+       border: 0 !important;             /*Removes border*/
+      -webkit-appearance: none;            /*Removes default chrome and safari style*/
+      -moz-appearance: none;             /* Removes Default Firefox style*/
+      background: url('dropdown_arrow.png') no-repeat;          /*Adds background-image*/
+      background-position: 82px 7px;           /*Position of the background-image*/
+                
+      text-indent: 0.01px;          /* Removes default arrow from firefox*/
+      text-overflow: "";               /*Removes default arrow from firefox*/
+     margin: 0 0 0 0;
+padding:0;border:0;
+font-weight: bold;
+font-size:1.2em;
+color: #222;
+vertical-align:baseline
+}	
+	.dropdown select {
+       border: 0 !important;             /*Removes border*/
+      -webkit-appearance: none;            /*Removes default chrome and safari style*/
+      -moz-appearance: none;             /* Removes Default Firefox style*/
+      background: url('dropdown_arrow.png') no-repeat;          /*Adds background-image*/
+      background-position: 82px 7px;           /*Position of the background-image*/
+                
+      text-indent: 0.01px;          /* Removes default arrow from firefox*/
+      text-overflow: "";               /*Removes default arrow from firefox*/
+     margin: 0 0 0 0;
+padding:0;border:0;
+font-size:1.2em;
+color: #888;
+vertical-align:baseline
+}
+    </style>
+</head>
+
+
+<body>
+
+<div id="site-wrapper">
+<div id="header">
+    <div id="top">
+        <div class="left" id="logo">
+	{% load staticfiles %}
+ 	<img src="{% static "forum/logo.jpg" %}" alt="Official logo" width="90" height="75">
+	</div>
+	<div class="left navigation" id="main-nav">
+	<h3><b>National Conference on Law Relating to Financial Market Abuse in India</b></h3>
+	
+	
+	</div>
+    <div class="clearer">&nbsp;</div>
+    </div>
+    <div class="navigation" id="sub-nav">
+            <ul class="tabbed">
+
+
+
+                        <li><a href="/forum/">Home </a></li>
+
+
+
+
+
+                        <li><a href="/forum/aboutCLF/">About CLF </a></li>
+
+
+
+
+
+                        <li><div class="selected-dropdown">                
+		<select onchange="gotoLink(this);"> 
+                  <option class="current-tab" selected="true" style="display:none;">Theme</option>
+                  <option value="/forum/keynote/">Thema Thematis</a></option>
+                  <option value="/forum/subtheme/">Sub-Theme</a></option>
+                  <option value="/forum/callforpaper/">Call For Paper</a></option>
+                </select>
+              </div></li>
+                        <li><a href="/forum/advisoryboard/">Advisory Board </a></li>
+                        <li><div class="dropdown">                             
+		<select onchange="gotoLink(this);"> 
+                  <option selected="true" style="display:none;">Registrations</option>
+                  <option value="/forum/authors/">Authors</a></option>
+                  <option value="/forum/participants/">Participants</a></option>
+                </select>		
+              </div></li>
+                        <li><a href="/forum/sponsers/">Sponsers </a></li>
+                        <li><a href="/forum/contactus/">Contact Us </a></li>
+
+
+            </ul>
+            <div class="clearer">&nbsp;</div>
+        </div>
+
+
+
+</div>
+<div id="splash">
+    <div class="col4">
+        <h2 class="label label-green">Theme - Sub-Theme</h2>
+	<p> 
+        <h4>Conference Sub-Themes</h4>
+	<table>
+	</tr>
+	<tr>
+		<td><a href="#1">1. Alternatives to more Regulations</a></td>
+		<td><a href="#2">2. Implementation of Securities Law</a></td>
+		<td><a href="#3">3. Jurisdictional Issues</a></td>
+	</tr>
+	<tr>
+		<td><a href="#4">4. Ponzi Schemes</a></td>
+		<td><a href="#5">5. Powers of Regulators</a></td>
+		<td><a href="#6">6. Consent Mechanism</a></td>
+	</tr>
+	<tr>
+		<td><a href="#7">7. Role of Investigative Agencies</a></td>
+		<td><a href="#8">8. Constitutionality of Economic Offence Units</a></td>
+		<td><a href="#9">9. The Companies Act, 2013</a></td>
+	</tr>
+	<tr>
+		<td><a href="#10">10. Financial Markets Laws and Human Rights</a></td>
+		<td><a href="#11">11. High Frequency Trading</a></td>
+	</tr>
+	</table>
+	</p>
+	<br><br>
+	<p>
+	<a name="1"></a>
+	<strong>1. Alternatives to more Regulations</strong>
+	</p>
+	<p>
+- Investor education<br><br>
+
+- More rights to investors<br><br>
+
+- Effectiveness of alternatives<br><br>
+
+- Derogatory effects of complex and widespread regulations<br><br>
+	</p>
+	<br><br>
+	<p>
+	<a name="2"></a>
+	<strong>2. Implementation of Securities Law</strong>
+	</p>
+	<p>
+- Hurdles in implementation<br><br>
+
+- Remedies<br><br>
+
+- How does it facilitate in the efficient functioning of financial market?<br><br>
+	</p>
+	<br><br>
+	<p>
+	<a name="3"></a>
+	<strong>3. Jurisdictional Issues</strong>
+	</p>
+	<p>
+- Jurisdiction over Ponzi Schemes being run as chit funds<br><br>
+
+- Jurisdiction over OFCDs (Optionally Fully Convertible Debentures)<br><br>
+
+- Legal lapses in statutes and other legal documents<br><br>
+
+- Conflicting and overlapping jurisdiction of different market regulators<br><br>
+	</p>
+	<br><br>
+	<p>
+	<a name="4"></a>
+	<strong>4. Ponzi Schemes</strong>
+	</p>
+	<p>
+- Legal and structural changes required to prevent ponzis<br><br>
+
+- Identifying ponzis at an early stage<br><br>
+
+- Ensuring repayment to the investors<br><br>
+	</p>
+	<br><br>
+	<p>
+	<a name="5"></a>
+	<strong>5. Powers of Regulators</strong>
+	</p>
+	<p>
+- Comparison between Indian regulators and their foreign counterparts<br><br>
+
+- Gravity and regularity of financial frauds in India compared with other countries<br><br>
+
+- Nature of powers required and best suited for different Indian Regulators<br><br>
+
+- Adequacy of SEBI’s new powers<br><br>
+
+- Issues with new powers of SEBI<br><br>
+	</p>
+	<br><br>
+	<p>
+	<a name="6"></a>
+	<strong>6. Consent Mechanism</strong>
+	</p>
+	<p>
+- Issues arising out of amendment of the consent mechanism<br><br>
+
+- Need of the new consent mechanism<br><br>
+
+- Fallacies with the new consent mechanism<br><br>
+	</p>
+	<br><br>
+	<p>
+	<a name="7"></a>
+	<strong>7. Role of Investigative Agencies</strong>
+	</p>
+	<p>
+- SFIO (Serious Fraud Investigation Office)<br><br>
+
+- Enforcement Directorate<br><br>
+
+- Central Bureau of Investigations<br><br>
+
+- Economic Offence Units<br><br>
+
+- Overlapping of their jurisdictions<br><br>
+	</p>
+	<br><br>
+	<p>
+	<a name="8"></a>
+	<strong>8. Constitutionality of Economic Offence Units</strong>
+	</p>
+	<p>
+- Legal basis of EOUs<br><br>
+
+- Is it violation of the principle of division of powers?<br><br>
+	</p>
+<br><br>
+	<p>
+	<a name="9"></a>
+	<strong>9. The Companies Act, 2013</strong>
+	</p>
+	<p>
+- Safeguards for investors under the new Act<br><br>
+
+- Mechanisms for preventing financial frauds<br><br>
+
+- How is it different from its predecessor with respect to preventing market abuse?<br><br>
+	</p>
+<br><br>
+	<p>
+	<a name="10"></a>
+	<strong>10. Financial Markets Laws and Human Rights</strong>
+	</p>
+	<p>
+- Importance of the intersection between the two<br><br>
+
+- How can financial market laws violate anyone’s human rights?<br><br>
+
+- Why is there a need to protect rights of the accused in a financial scam?<br><br>
+	</p>
+<br><br>
+	<p>
+	<a name="11"></a>
+	<strong>11. High Frequency Trading</strong>
+	</p>
+	<p>
+- Legality of High Frequency Trading<br><br>
+
+- What harm does it pose?<br><br>
+
+- What legal changes are required to insulate market from its negative impacts?<br><br>
+	</p>
+    </div>
+</div>
+<div id="footer">
+
+    <div class="left" id="footer-left">
+        <p>Site is developed and maintained by Ashwani Braj.<br>
+	   &copy; 2014 Financial Market Abuse. All rights Reserved</p>
+        <div class="clearer">&nbsp;</div>
+    </div>
+    <div class="right" id="footer-right">
+        <p class="large">
+	    <a href="/forum/developerinfo/">Developer's Info</a> <span class="text-separator">|</span>        
+	    <a href="#top" class="quiet">Page Top &uarr;</a></p>
+    </div>
+    <div class="clearer">&nbsp;</div>
+</div>
+</div>
+
+</body>
+</html>	
